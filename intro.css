@@ -1,14 +1,78 @@
 body {
     background-color: #ffdcdf;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    text-align: center;
 }
 
+@-webkit-keyframes example {
+    0%   {background-color:#81a0d1; }
+    25%  {background-color:#ca8fd6; }
+    50%  {background-color:#514342; }
+    75%  {background-color:#ffce2d; }
+    100% {background-color:#ef4832; }
+}
+
+@-webkit-keyframes border {
+    0%   {border: 0.1em dashed #81a0d1; color: #81a0d1;}
+    25%  {border: 0.1em dashed #ca8fd6; color: #ca8fd6;}
+    50%  {border: 0.1em dashed #514342; color: #514342;}
+    75%  {border: 0.1em dashed #ffce2d; color: #ffce2d;}
+    100% {border: 0.1em dashed #ef4832; color: #ef4832; }
+}
+
+
 h1 {
+    -webkit-animation-name: border; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: border;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: white;
     font-weight: bold;
-    color: #ffa8da;
+    font-family: 'Indie Flower', cursive;
+    font-size: 145px;
+    color: #ffa9aa;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 70%;
+    border: 0.3em dashed pink;
+    box-shadow: 0 0 100px #a5158d;
+    border-radius: 0.3em;
 }
 
 h2 {
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 1em;
     font-weight: bold;
-    color: #ff52d0;
+    font-family: 'Coiny', cursive;
+    color: #b2379d;
+}
+
+.one {
+    position: absolute;
+    left: 680px;
+    bottom: 300px;
+}
+
+.two {
+    position: absolute;
+    left: 730px;
+    bottom: 300px;
     
 }
